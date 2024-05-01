@@ -25,9 +25,12 @@ class Config(object):
     MAIL_USERNAME = 'msec@fastmail.com'
     MAIL_PASSWORD = 'adggvnylruxb2npa'
 
-    # Server settings
-    SERVER_NAME = 'msec.edu:5000'
+    
+
     ...
 
 class DevConfig(Config):
     ...
+
+class ProdConfig(Config):
+    SQLALCHEMY_DATABASE_URI = 'mysql://msec:9150482864in@msec.mysql.pythonanywhere-services.com'
